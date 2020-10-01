@@ -1,5 +1,283 @@
-<html>
-<body>
-HI
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles-index.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/script-index.html"></script>
+    <title>Student Form</title>
+  
+  </head>
+  <body>  
+    <div class="container">
+      <!-- Header-->
+      <header class="card-header">
+        <div class="vcet rounded p-1">
+        <a class="text-dark" id="home-page" href="https://vcet.edu.in/"><h1 class="col-sm-12 col-lg-12 col-md-12">Vidyavardhini's College of Engineering and Technology</h1></a>
+        </div>
+        <h3 class="col-sm-12 col-lg-12 col-md-12">Research paper utility page</h3>
+        <br>
+        <!-- Nav pills -->
+        <ul class="nav nav-pills row" role="tablist">
+          <li class="col-md-2 col-lg-2 nav-item">
+            <a class="nav-link active border rounded" data-toggle="pill" href="#home">Info & Verify</a>
+          </li>
+          <li class="col-md-4 col-lg-4 nav-item">
+            <a class="nav-link border rounded" data-toggle="pill" href="#view">View Research Paper Details</a>
+          </li>
+          <li class="col-md-3 col-lg-3 nav-item">
+            <a class="nav-link border rounded" data-toggle="pill" href="#professor">Professor form</a>
+          </li>
+          <li class="col-md-3 col-lg-3 nav-item">
+            <a class="nav-link border rounded" data-toggle="pill" href="#student">Student form</a>
+          </li>
+        </ul>
+      </header><!-- end header-->
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div id="home" class="tab-pane active"><br>
+          <h3>Info</h3>
+          <div class="info-button">
+              <div class="info">
+                <p>
+                  This is the research paper view as well as entry page for the students and professors of the college "Vidyavardhini's College of Engineering and Technology"
+                </p>
+                <p>
+                  Note: If you want to enter your research paper details on the college database, please enter your name and college ID card details below.
+                </p>
+              </div>
+              <br>
+              <div class="info-verify">
+                <input type="number" class="form-control mt-2 col-sm-3" placeholder="College ID number">
+                <input type="text" class="form-control mt-2 col-sm-3" placeholder="First Name"> 
+                <input type="text" class="form-control mt-2 col-sm-3" placeholder="Last Name">
+              </div>
+          </div>
+        </div>
+        <div id="view" class="tab-pane fade"><br>
+          <h3>View</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <!-- Professor Form-->
+        <div id="professor" class="tab-pane fade"><br>
+          <h3>Professor Form</h3><br>
+          <form class="form-horizontal">
+            <!--<div class="form-group">
+              <label class="control-label col-sm-2">Name:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control">
+              </div>
+            </div>-->
+              <!--<div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">First Name :</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="">
+                </div>
+              </div>-->
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email :</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email :</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+          </form>
+        </div>
+        <!-- Student From-->
+        <div id="student" class="tab-pane fade"><br>
+          <h3>Student Form</h3><br>
+          <form action="stud_insert.php" method="POST" enctype="multipart/form-data" class="form-horizontal">
+            <div class="form-group row">
+            <label class="control-label col-sm-2" for="fname">First name :</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="fname" name="fname" placeholder="First name" required>
+              </div>
+            </div>
+            <div class="form-group row">
+            <label class="control-label col-sm-2" for="lname">Last name :</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name" required>
+              </div>
+            </div>
+            <div class="form-group row">
+            <label class="control-label col-sm-2" for="id">College ID number :</label>
+              <div class="col-sm-4">
+                <input type="number" class="form-control" id="id" name="id" placeholder="College id number" required>
+              </div>
+            </div>
+          <div class="form-group row">
+            <label class="control-label col-sm-2" for="year">Year :</label>
+            <div class="col-sm-4">
+              <select class="form-control" id="year" name="year" placeholder="Year" required>
+                <option>
+                  First Year Engineering (B.E)
+              </option>
+              <option>
+                  Second Year Engineering (S.E)
+              </option>
+              <option>
+                  Third Year Engineering (T.E)
+              </option>
+              <option>
+                  Final Year Engineering (B.E)
+              </option>
+            </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-sm-2" for="dept">Department :</label>
+            <div class="col-sm-4">
+              <select class="form-control" id="dept" name="dept" placeholder="Department" required>
+                <option> 
+                  Mechanical Engineering
+                </option>
+                <option>
+                  Electronics and Telecommunications Engineering
+                </option>
+                <option>
+                  Instrumentation Engineering    
+                </option>
+                <option>
+                  Computer Engineering
+                </option>
+                <option>
+                  Information Technology
+                </option>
+                <option>
+                  Civil Engineering
+                </option>
+            </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-sm-2" for="title">Title of the Paper :</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="title" name="title" placeholder="Title" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-sm-2" for="conf">Conference name :</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="conf" name="conf" placeholder="Conference name" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-sm-2" for="venue">Venue :</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="venue" name="venue" placeholder="Venue" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-sm-2" for="stage">Level :</label>
+            <div class="col-sm-4">
+              <select class="form-control" id="stage" name="stage" placeholder="Level" required>
+                <option>
+                    National
+                </option>
+                <option>
+                    International
+                </option>
+            </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-sm-2" for="academic-year">Academic Year :</label>
+            <div class="col-sm-4">
+              <select class="form-control" id="academic-year" name="academic-year" placeholder="Academic year" required>
+                <option>
+                    2018-2019
+                </option>
+                <option>
+                    2019-2020
+                </option>
+                <option>
+                  2021-2022
+                </option>
+                <option>
+                  2022-2023
+                </option>
+                <option>
+                  2023-2024
+                </option>
+                <option>
+                  2024-2025
+                </option>
+                <option>
+                  2025-2026
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-sm-2" for="date">Date (optional) :</label>
+            <div class="col-sm-4">
+              <input type="date" class="form-control" id="date" name="Date" placeholder="Date" >
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-sm-2" for="isbn">ISBN / ISSN :</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="isbn" name="isbn" placeholder="ISBN / ISSN" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-sm-2" for="page-start">Start page number :</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control" id="page-start" name="page-start" placeholder="Start page" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-sm-2" for="page-end">End page number :</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control" id="page-end" name="page-end" placeholder="End page" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-sm-2" for="link">Upload link :</label>
+            <div class="col-sm-4">
+              <input type="url" class="form-control" id="link" name="link" placeholder="url">
+              <!-- accept="pdf/*"> -->
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-sm-2" for="myfile">Upload pdf file:</label>
+            <div class="col-sm-4">
+              <input type="file" class="form-control" id="myfile" name="file" accept="pdf/*">
+            </div>
+          </div>
+          <div class="form-group row">
+          <!--        
+            <div class="col-sm-offset-2 col-sm-1">
+                <button type="button" id="preview_bt" class="btn btn-default">Preview</button>
+            </div>
+          !-->
+            <div class="col-sm-4 offset-sm-2">
+              <label><input type="checkbox" name="remember" class="checkbox" required> I confirm my submission</label>
+            </div> 
+          </div>
+          <div class="form-group row">        
+            <div class="col-sm-4 offset-sm-2">
+                <button type="submit" id="submit_bt" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

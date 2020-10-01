@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+
+</script>
+
+
+<style>
+  body {
+    background-color: lightgrey; /* For browsers that do not support gradients */
+    background-image: linear-gradient(lightblue,lightgrey); /* Standard syntax (must be last) */
+    
+  }
+html{
+  background-color: lightgrey;
+}
+  .footer {
+    margin-top: 6%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aquamarine;
+    color: black;
+    text-align: center;
+  }
+#submit_bt{
+  border: 1px solid dodgerblue;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+}
+#submit_bt:hover{
+  border: 2px solid dodgerblue;
+}
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <h2>Enter the credentials as a Professor</h2>
+    <form action="stud_insert.php" method="POST" enctype="multipart/form-data" class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="fname">First name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter first name" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="lname">Last name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter last name" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="id">ID number:</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" id="id" name="id" placeholder="Enter college id" required>
+      </div>
+    </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="year">Year:</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="year" name="year" placeholder="Select year" required>
+        <option>
+          F.E
+      </option>
+      <option>
+          S.E
+      </option>
+      <option>
+          T.E
+      </option>
+      <option>
+          B.E
+      </option>
+    </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="dept">Department:</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="dept" name="dept" placeholder="Select department" required>
+        <option>
+            Computer Science
+        </option>
+        <option>
+            Information Technology
+        </option>
+        <option>
+            Extc
+        </option>
+        <option>
+            Civil
+        </option>
+        <option>
+            Mechanical
+        </option>
+    </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="title">Title:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="title" name="title" placeholder="Enter title" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="conf">Conference name:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="conf" name="conf" placeholder="Enter conference name" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="venue">Venue:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="venue" name="venue" placeholder="Enter venue" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="stage">Level:</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="stage" name="stage" placeholder="Select level" required>
+        <option>
+            National
+        </option>
+        <option>
+            International
+        </option>
+    </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="date">Date:</label>
+    <div class="col-sm-10">
+      <input type="date" class="form-control" id="date" name="Date" placeholder="Select date" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="isbn">ISBN/ISSN:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="isbn" name="isbn" placeholder="Enter ISBN/ISSN" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="p_p">No of pages:</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" id="p_p" name="p_p" placeholder="Enter count" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="myfile">Upload pdf file:</label>
+    <div class="col-sm-10">
+      <input type="file" class="form-control" id="myfile" name="file" accept="pdf/*">
+    </div>
+  </div>
+  <div class="form-group">
+  <!--        
+    <div class="col-sm-offset-2 col-sm-1">
+        <button type="button" id="preview_bt" class="btn btn-default">Preview</button>
+    </div>
+  !-->
+    <div class="col-sm-offset-2 col-sm-4">
+        <div class="checkbox">
+            <label><input type="checkbox" name="remember" required>I <u>confirm</u> my submission</label>
+        </div>
+    </div> 
+  </div>
+  <div class="form-group">        
+    <div class="col-sm-offset-2 col-sm-3">
+        <button type="submit" id="submit_bt" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+  </form>
+</div>
+<!--
+<div class="footer col-sm-12">
+  <p>rushank</p>
+</div>
+!-->
+</body>
+</html>
