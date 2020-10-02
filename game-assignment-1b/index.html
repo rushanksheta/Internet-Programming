@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css\styles.css">
+    
+    <script type="text/javascript" src="js\script.js"></script>
+    
+    <title>Tic Tac Toe</title>
+
+</head>
+<body onload="startGame();">
+  <div class="container">
+    <div id="header" class="bg-dark row rounded-bottom text-light p-3">
+        <h1>Tic Tac Toe</h1>
+        <!--<button id="reset" class="btn bg-dark text-light rounded p-3" onclick="reset()">Reset</button>-->
+    </div>
+      <div class="bg-secondary row rounded text-light p-3 mt-1" id="message">
+        message of whose turn will go here 
+      </div>
+      <br>
+      <br>
+      
+    <div class="board rounded">  
+      <div class="d-flex flex-row mx-3">
+          <button class="bg-dark mt-3 rounded" id="cell1" onclick="nextMove(this.id)"></button>
+          <button class="bg-dark mt-3 rounded" id="cell2" onclick="nextMove(this.id)"></button>
+          <button class="bg-dark mt-3 rounded" id="cell3" onclick="nextMove(this.id)"></button>
+        </div>
+        <div class="d-flex flex-row mx-3">
+          <button class="bg-dark rounded" id="cell4" onclick="nextMove(this.id)"></button>
+          <button class="bg-dark rounded" id="cell5" onclick="nextMove(this.id)"></button>
+          <button class="bg-dark rounded" id="cell6" onclick="nextMove(this.id)"></button>
+        </div>
+        <div class="d-flex flex-row mx-3">
+          <button class="bg-dark mb-3 rounded" id="cell7" onclick="nextMove(this.id)"></button>
+          <button class="bg-dark mb-3 rounded" id="cell8" onclick="nextMove(this.id)"></button>
+          <button class="bg-dark mb-3 rounded" id="cell9" onclick="nextMove(this.id)"></button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

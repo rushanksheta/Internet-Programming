@@ -16,7 +16,25 @@
     <script src="js/script-index.html"></script>
 </head>
 <body>
+<div>           
+<input type="text" id="textfield1" size="5"/>         
+</div>
 
+<div>          
+<input type="text" id="textfield2" size="5"/>           
+</div>
+
+<div>
+    <input type="button" onclick="clearFields()" >
+</div>
+
+
+<script type="text/javascript">
+function clearFields() {
+    document.getElementById("textfield1").value=""
+    document.getElementById("textfield2").value=""
+}
+</script>
 </body>
 </html>
 
