@@ -14,7 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="js/script-index.html"></script>
+    <script type="text/javascript" src="js/script-index.js"></script>
     <title>Student Form</title>
   
   </head>
@@ -101,7 +101,7 @@
         <!-- Student From-->
         <div id="student" class="tab-pane fade"><br>
           <h3>Student Form</h3><br>
-          <form action="stud_insert.php" method="POST" enctype="multipart/form-data" class="form-horizontal">
+          <!--<form action="stud_insert.php" method="POST" enctype="multipart/form-data" class="form-horizontal">-->
             <div class="form-group row">
             <label class="control-label col-sm-2" for="fname">First name :</label>
               <div class="col-sm-4">
@@ -272,7 +272,7 @@
           </div>
           <div class="form-group row">        
             <div class="col-sm-4 offset-sm-2">
-                <button type="submit" id="submit_bt" class="btn btn-primary">Submit</button>
+                <button type="submit" id="submit_bt" class="btn btn-primary" onclick="record_added()">Submit</button>
             </div>
           </div>
           </form>
