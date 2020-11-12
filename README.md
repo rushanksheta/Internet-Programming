@@ -3,12 +3,12 @@ sem 5 -by Prof.Yogesh Pingle
 <h2 style="color:green;">Access all my Experiments and Assignments from below</h2>
 <p>
   <ul>
-    <li>Experiments</li>
+    <li><b>Experiments</b></li>
       <ul>
         <li> Login/Signin page : <a href="https://rushanksheta.github.io/Internet-Programming/Experiments/Experiment%201/" target="_blank">Experiment 1</a></li>
       </ul>
     <br>
-    <li>Assignments</li>
+    <li><b>Assignments</b></li>
     <br>
     <li>Projects</li>
   </ul>
