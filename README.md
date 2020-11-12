@@ -1,5 +1,5 @@
 # Internet-Programming sem5 projects and assignments
-sem 5(2020-2021) -by Prof.Yogesh Pingle
+sem 5(2020-2021) <i>-by Prof.Yogesh Pingle</i>
 <h2><u>Access all my Experiments and Assignments from below</u></h2>
 <p>
   <ul>
