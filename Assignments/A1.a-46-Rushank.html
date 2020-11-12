@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Calculator with JS</title>
+
+  <style>
+    *{
+      font-family: monospace;
+      text-align: center;
+    }
+    input{
+      width: 100px;
+      height: 100px;
+      margin: 15px;
+      border: 0px ;
+      border-radius: 5px;
+      font-size: xx-large;
+      box-shadow: 3px 3px 5px grey;
+      transition: transform .5s,border 0.5s;
+
+    }
+    #display{
+      color: white;
+      width: 500px;
+      text-align: right;
+      font-size: 400%;
+    }
+    input:hover{
+      -ms-transform: scale(1.2,1.2);
+      transform: scale(1.2,1.2);
+      box-shadow: 0px 0px 0px;
+      border: 1px solid lightgray;
+    }
+</style>
+</head>
+  <body>
+      <div class="container-fluid">
+        <h1> Assignment 1 - Calculator Using Javascript</h1>
+        <form name="calculator">
+          <div class="d-flex justify-content-center">
+            <input class="bg-dark" id="display" type="text" name="answer"/>
+          </div>
+          <div class="d-flex justify-content-center">
+              <input type="button" value=" 1 " onclick="calculator.answer.value += '1'"/>
+              <input type="button" value=" 2 " onclick="calculator.answer.value += '2'"/>
+              <input type="button" value=" 3 " onclick="calculator.answer.value += '3'"/>
+              <input type="button" value=" + " onclick="calculator.answer.value += '+'"/>
+          </div>
+          <div class="d-flex justify-content-center">
+              <input type="button" value=" 4 " onclick="calculator.answer.value += '4'"/>
+              <input type="button" value=" 5 " onclick="calculator.answer.value += '5'"/>
+              <input type="button" value=" 6 " onclick="calculator.answer.value += '6'"/>
+              <input type="button" value=" - " onclick="calculator.answer.value += '-'"/>
+          </div>
+          <div class="d-flex justify-content-center">
+              <input type="button" value=" 7 " onclick="calculator.answer.value += '7'"/>
+              <input type="button" value=" 8 " onclick="calculator.answer.value += '8'"/>
+              <input type="button" value=" 9 " onclick="calculator.answer.value += '9'"/>
+              <input type="button" value=" x " onclick="calculator.answer.value += '*'"/>
+          </div>
+          <div class="d-flex justify-content-center">
+              <input type="button" value=" C " onclick="calculator.answer.value = ''"/>
+              <input type="button" value=" 0 " onclick="calculator.answer.value += '0'"/>
+              <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)"/>
+              <input type="button" value=" / " onclick="calculator.answer.value += '/'"/>
+          </div>
+        </form>
+      </div>
+  </body>
+</html>

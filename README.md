@@ -1,15 +1,16 @@
 # Internet-Programming sem5 projects and assignments
-sem 5 -by Prof.Yogesh Pingle
+sem 5(2020-2021) <i>-by Prof.Yogesh Pingle</i>
+<h2><u>Access all my Experiments and Assignments from below</u></h2>
 <p>
   <ul>
-    <li>Experiments</li>
+    <li><b>Experiments</b></li>
       <ul>
         <li> Login/Signin page : <a href="https://rushanksheta.github.io/Internet-Programming/Experiments/Experiment%201/" target="_blank">Experiment 1</a></li>
       </ul>
     <br>
-    <li>Assignments</li>
+    <li><b>Assignments</b></li>
     <br>
-    <li>Projects</li>
+    <li><b>Projects</b></li>
   </ul>
 </p>
 
