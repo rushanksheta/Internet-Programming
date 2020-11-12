@@ -12,8 +12,8 @@ sem 5(2020-2021) <i>-by Prof.Yogesh Pingle</i>
       <ul>
         <li>Assignment 1 :</li>
             <ul>
-              <li><a href ="https://rushanksheta.github.io/Internet-Programming/Assignments/A1-a-Calculator/">a.Calculator using JS</a></li>
-              <li><a href ="https://rushanksheta.github.io/Internet-Programming/Assignments/A1-b-TicTacToe/">b.Tic Tac Toe game</a></li>
+              <li><a href ="https://rushanksheta.github.io/Internet-Programming/Assignments/A1-a-Calculator/">a. Calculator using JS</a></li>
+              <li><a href ="https://rushanksheta.github.io/Internet-Programming/Assignments/A1-b-TicTacToe/">b. Tic Tac Toe game</a></li>
             </ul>
       </ul>
     <br>
