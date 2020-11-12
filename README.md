@@ -1,6 +1,6 @@
 # Internet-Programming sem5 projects and assignments
 sem 5 -by Prof.Yogesh Pingle
-<h2 style="color:green;">Access all my Experiments and Assignments from below</h2>
+<h2><u>Access all my Experiments and Assignments from below</u></h2>
 <p>
   <ul>
     <li><b>Experiments</b></li>
@@ -10,7 +10,7 @@ sem 5 -by Prof.Yogesh Pingle
     <br>
     <li><b>Assignments</b></li>
     <br>
-    <li>Projects</li>
+    <li><b>Projects</b></li>
   </ul>
 </p>
 
