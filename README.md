@@ -6,6 +6,7 @@ sem 5(2020-2021) <i>-by Prof.Yogesh Pingle</i>
     <li><b>Experiments</b></li>
       <ul>
         <li>Login/Signin page : <a href="https://rushanksheta.github.io/Internet-Programming/Experiments/Experiment%201/" target="_blank">Experiment 1</a></li>
+        <li>CSS Selectors, Animation : <a href="https://rushanksheta.github.io/Internet-Programming/Experiments/Experiment%202/" target="_blank">Experiment 2</a></li>
       </ul>
     <br>
     <li><b>Assignments</b></li>
