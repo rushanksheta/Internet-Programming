@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Experiment 2</title>
+  <style>
+    /* All elements */
+    *{
+      padding: 0;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    /* id selector */
+    #para-1{
+      background-color: yellow;
+    }
+    /* class selector */
+    .para-2{
+      background-color: lightgreen;
+    }
+    /* first child pseudo class selector, 1st p child of div */
+    p:first-child{
+      font-family: fantasy;
+    }
+    /* Attribute Selector */
+    a[target=_blank] {
+      background-color: lightblue;
+    }
+    /* Pseudo class selector , when hovered over a tag text will become bold*/
+    a:hover{
+      font-weight: bold;
+    }
+    /* Pseudo Element selector, first letter of all paragraphs will be bigger*/
+    p::first-letter {
+      font-size: x-large;
+    }
+    /* Pseudo class selector odd no of child will be half width*/
+    p:nth-child(odd) {
+      width: 50%;
+      border: 2px solid black;
+    }
+    p:nth-child(even) {
+      width: 100%;
+      border: 2px solid black;
+    }
+    /* Combinator Selectors, All li inside ol */
+    ol li{
+      font-size: large;
+      font-family: monospace;
+    }
+    /* Animation, transformation */
+    @keyframes anim {
+      0%   {background-color:yellow; left:0px; top:0px;transform:scale(1.1,1.1);}
+      25%  {background-color:lightseagreen; left:100px; top:100px;transform:scale(1.25,1.25);}
+      50%  {background-color:lightblue; left:200px; top:200px;transform:scale(1.4,1.4);}
+      75%  {background-color:lightcoral; left:300px; top:300px;transform:scale(1.55,1.55);}
+      100% {background-color:lightgray; left:400px; top:400px;transform:scale(1.7,1.7);}
+    }
+    #animation {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 700px;
+      background-color: red;
+      position: relative;
+      animation-name: anim;
+      animation-duration: 5s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      transition: width 1s, height 1s;
+    }
+    /* transition */
+    #animation:hover{
+      width: 500px;
+      height: 50px;
+    }
+    
+  </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>IP Experiment 2</h1>  
+      <h1 class="text-center">CSS Selectors</h1>
+      <div>
+        <ol>
+          <li>Simple Selectors</li>
+            <ul>
+              <li>*{} : Universal Selector, all the elements.</li>
+              <li>#para-1{} : Paragraph with given id.</li>
+              <li>.para-2{} : Paragraph with given class.</li>
+            </ul><br>
+          <li>Combinator Selectors</li>
+            <ul>
+              <li>ol li{} : All li inside ol.</li>
+            </ul><br>
+          <li>Pseudo Class Selectors</li>
+            <ul>
+              <li>p:first-child(odd){} : Where p is the first child of the parent.</li>
+              <li>a:hover{} : When cursor hovered over a element.</li>
+              <li>p:nth-child(odd){} : All odd p child of the parent.</li>
+              <li>p:nth-child(even){} : All even p child of the parent.</li>
+            </ul><br>
+          <li>Pseudo Element Selectors</li>
+            <ul>
+              <li>p::first-letter{} : First letter of every p element.</li>
+            </ul><br>
+          <li>Attribute Selectors</li>
+            <ul>
+              <li>a[target=_blank]{} : All a elements where target parameter has '_blank' value.</li>
+            </ul>
+        </ol>
+      </div>
+      <div>
+        <p id='para-1'>Paragraph 1 will have background yellow using id selector</p>
+        <p class='para-2'>Paragraph 2 will have background green using class selector</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+        <p>Paragraph 5</p>
+        <p>Paragraph 6</p>
+        <a target="_blank" href="/">Link 1 with value of target specified as '_blank'</a><br>
+        <a href="/">Link 2 with no value of target specified</a>
+      </div>
+    
+      <h1>Transition, Transorm, Animation</h1>
+        <div id='animation' class="text-center">Animation</div>
+    </div>
+  </body>
+</html>
