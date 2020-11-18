@@ -1,0 +1,153 @@
+/*.center-text{
+    text-align: center;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.center-flex-x{
+    display: flex;
+    justify-content: center;
+}
+.margin-t3{
+    margin-top: 3%;
+}
+.nav{
+    background-color: green;
+}
+.float-left{
+    float: left;
+}
+form{
+    
+    background-color: turquoise;
+}
+.nav-button{
+    width: 50%;
+}
+#signin,#login{
+    background-color: thistle;
+    font-size: large;
+    font-weight: bold;
+    width: 50%;
+}
+.signup_form{
+    background-color: rgba(113, 152, 223, 0.493);
+    width: 40%;
+    border: 1px solid black;
+    
+}
+.login_form{
+    background-color: rgba(113, 152, 223, 0.493);
+    width: 40%;
+    border: 1px solid black;
+    
+}*/
+.flex-container {
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .flex-item-signin, .flex-item-login {
+    margin: 1%;
+    flex: 48%;
+    border-radius: 4px;
+    border: 1px solid rgba(131, 131, 131, 0.5);
+    padding: 4px;
+  }
+  
+  @media (max-width: 800px) {
+    .flex-item-signin, .flex-item-login {
+      flex: 100%;
+    }
+  }
+
+  input{
+  width: 70%;
+  padding: 6px 12px;
+  margin: 8px 20px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+label{
+    width: 15%;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input:focus {
+  border: 3px solid #555;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+header{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+footer{
+    text-align: center;
+    padding-top: 0 !important;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    font-size: smaller;
+}
+
+.signin, .login{
+    padding: 5px;
+    margin: 10px;
+    width: 15%;
+    background-color: rgba(59, 192, 93, 0.5);
+    border-radius: 4px;
+    border-color:  rgba(59, 192, 93, 0.5);
+    font-weight: 500;
+}
+.signin:hover{
+    color: white;
+    background-color: rgba(59, 192, 93, 0.8);
+    transition-duration: 0.8s;
+    transition-delay: 0.1s;
+}
+.login:hover{
+    color: white;
+    background-color: rgba(59, 192, 93, 0.8);
+    transition-duration: 0.8s;
+    transition-delay: 0.1s;
+
+}
+.reset{
+    padding: 5px;
+    margin: 10px;
+    width: 15%;
+    background-color: rgba(250, 102, 102, 0.4);
+    border-radius: 4px;
+    border-color:  rgba(250, 102, 102, 0.4);
+    font-weight: 500;
+}
+.reset:hover{
+    color: white;
+    background-color: rgba(250, 102, 102, 0.7);
+    transition-duration: 0.8s;
+    transition-delay: 0.1s;
+}
+.question{
+    text-align: left;
+    font-size: smaller;
+}
+.info{
+    font: small;
+}
