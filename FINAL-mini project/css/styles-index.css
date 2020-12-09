@@ -1,0 +1,94 @@
+.heading{
+    font-family: Georgia, serif;
+}
+#verify_button, #reset_button{
+    transition: transform 0.5s;
+    transition: color 0.5s;
+    color: white;
+}
+#verify_button:hover{
+    transform: scale(1.15,1.35);
+    color: lightgreen;
+}
+#reset_button:hover{
+    transform: scale(1.15,1.35);
+    color: lightcoral;
+}
+#home-page:hover{
+    text-decoration: none;
+}
+.row .control-label{
+    margin-top: auto;
+    font-size: 17px;
+}
+.vcet:hover{
+    background-color: #d9d9d9;
+}
+.nav li{
+    text-align: center;
+}
+.nav li a:hover{
+    background-color:  #d9d9d9;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input_upper{
+    text-transform: uppercase;
+}
+/* Firefox */
+*{
+    box-sizing: border-box;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap*/
+
+/* for table */
+table{
+    border-style:solid;
+    border-width:2px;
+    border-color: #5F9EA0;
+    overflow: scroll;
+    }
+    
+    td{
+        text-align:center;
+        border: 1px solid black;
+        }
+    
+/* table end */
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) { 
+
+}
+
+@media (min-width: 992px) {
+    
+}
+
+@media (min-width: 1200px) {
+
+}
+
+/*
+#student_li{
+    display: none;
+}
+#professor_li{
+    display: none;
+}
+#input_button{
+    visibility: hidden;
+}
+#button_button{
+    visibility: hidden;
+}*/
